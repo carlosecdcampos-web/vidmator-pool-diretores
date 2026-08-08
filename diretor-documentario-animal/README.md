@@ -17,6 +17,14 @@ Linha divisória: o MECANISMO (fiscal, rodízio, ciclo, download) é infra do
 Vidmator e serve a todos os diretores; o CONTEÚDO das leis (espécie exata, bioma,
 contemplativo, ângulos p/ animais...) é deste diretor.
 
+**⚖️ DOUTRINA DO POOL (ver `../ARQUITETURA.md`)**: a INTELIGÊNCIA DE EDIÇÃO
+pertence ao diretor — o take de abertura, o dinamismo de texto, o acervo de
+variantes, o contrato visual: tudo aqui descreve O ESTILO DESTE DIRETOR. Outro
+diretor pode não ter abertura, ter outra cadência, outras famílias de overlay.
+*"O ajuste na edição de um diretor NÃO DEVE ALTERAR a direção de edição de outro
+diretor, NUNCA"* — todo knob de estilo vira preset do diretor, nunca constante
+no código do corpo.
+
 ## As leis do funcionário do VEO (nicho animal — validadas em produção no v7)
 
 O GUIA completo vive em `vidmator/_import/2026-08-06-veo-flow/veo_pedido.py`
