@@ -52,12 +52,22 @@ pronta que sirva; ponto. Zero geração para buracos."*
 
 ## Documentos
 
+**Na raiz (os vivos):**
 - `ESPEC-V8.md` — as leis do veredito do v7 (cor pontual, abertura limpa,
   expurgo, lock, ângulo/direção), executadas e provadas em bancada
 - `ESPEC-INCIDENTE-CICLOS-CONCORRENTES.md` — a noite das colisões e do download:
   cada causa com sua blindagem (leitura OBRIGATÓRIA antes de mexer no ciclo)
 - `RELATORIO-V7-PIRANHA.md` — catálogo completo de erros da primeira produção fresh
-- `ESPEC-DIRETOR-ANIMAL-RECALIBRACAO.md` / `PENDENCIAS-DIRETOR-DOC.md` — histórico
+
+**`especs/` — TODA a inteligência de DIREÇÃO/EDIÇÃO construída (30 ESPECs):**
+o take de entrada e a abertura (`ESPEC-ABERTURA-E-TAKES`), o dinamismo de texto
+(`ESPEC-DINAMISMO-TEXTO`, `ESPEC-DINAMISMO-E-CORRECOES`), o acervo de overlays
+com 40 variantes e rodízio (`ESPEC-ACERVO-40-VARIANTES`), o contrato visual
+reproduzível, a validação/barreira, o zelador de produção, os ajustes ditados
+pelo operador rodada a rodada (V3→V7) — a memória dirigida completa do nicho.
+
+**`relatorios/`** — relatórios de implementação, auditorias do acervo, estudos
+de takes, catálogo de blindagem de produção, pendências e runbook.
 
 ## Pendências vivas
 
