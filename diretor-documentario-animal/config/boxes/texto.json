@@ -1,0 +1,571 @@
+{
+  "schema_version": 2,
+  "box": "texto",
+  "defaults": {
+    "piso_s": 3.0,
+    "teto_repeticoes": 2
+  },
+  "rotas_declaradas": [
+    {
+      "intencao": "punchline",
+      "dominio": "overlay",
+      "tom": null,
+      "nota": "pool vazio no código de origem"
+    }
+  ],
+  "elementos": [
+    {
+      "id": "Texto01_Typewriter",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto01_Typewriter",
+      "quando": "documento/dossiê, fato seco, tom investigativo",
+      "roteamento": [
+        {
+          "intencao": "documento",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "citacao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        },
+        {
+          "intencao": "spec",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "kinetic"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto02_HighlightSweep",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto02_HighlightSweep",
+      "quando": "citação de estudo/artigo, frase com trecho-chave",
+      "roteamento": [
+        {
+          "intencao": "citacao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "reflexao",
+          "ordem_base": 1
+        },
+        {
+          "intencao": "spec",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 6
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "decisiva",
+          "ordem_base": 1
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "epico",
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": true,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto03_WordPop",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto03_WordPop",
+      "quando": "frase de impacto curta, punchline, hook",
+      "roteamento": [
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "impacto",
+          "ordem_base": 0
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "afirmacao",
+          "ordem_base": 1
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "reflexao",
+          "ordem_base": 2
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "suspense",
+          "ordem_base": 1
+        },
+        {
+          "intencao": "spec",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 2
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "decisiva",
+          "ordem_base": 3
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "veredito",
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "kinetic"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto04_EditorialSerif",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto04_EditorialSerif",
+      "quando": "reflexão, transição elegante, tom documentário",
+      "roteamento": [],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": false,
+      "ban_motivo": "operador 06/08: 'tem animações MUITO MAIS BONITAS'"
+    },
+    {
+      "id": "Texto05_BoxedKicker",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto05_BoxedKicker",
+      "quando": "spec/definição técnica, dado nomeado",
+      "roteamento": [
+        {
+          "intencao": "spec",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "documento",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 3
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": 4,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto06_SplitBar",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto06_SplitBar",
+      "quando": "afirmação direta, abertura de tópico",
+      "roteamento": [
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "afirmacao",
+          "ordem_base": 0
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "suspense",
+          "ordem_base": 4
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "kinetic",
+        "acervo"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto07_StampImpact",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto07_StampImpact",
+      "quando": "veredito, conclusão forte, palavra de ordem",
+      "roteamento": [
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "veredito",
+          "ordem_base": 0
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "afirmacao",
+          "ordem_base": 2
+        },
+        {
+          "intencao": "spec",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 3
+        },
+        {
+          "intencao": "documento",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto08_GradientGlow",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto08_GradientGlow",
+      "quando": "momento épico/premium, número ou frase-troféu",
+      "roteamento": [
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "epico",
+          "ordem_base": 0
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "afirmacao",
+          "ordem_base": 3
+        },
+        {
+          "intencao": "citacao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 2
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "reflexao",
+          "ordem_base": 3
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "suspense",
+          "ordem_base": 2
+        },
+        {
+          "intencao": "spec",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 5
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "decisiva",
+          "ordem_base": 2
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "impacto",
+          "ordem_base": 3
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "kinetic"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto09_UnderlineDraw",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto09_UnderlineDraw",
+      "quando": "frase com UMA palavra decisiva no fim",
+      "roteamento": [
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "decisiva",
+          "ordem_base": 0
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "afirmacao",
+          "ordem_base": 4
+        },
+        {
+          "intencao": "citacao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 3
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "reflexao",
+          "ordem_base": 4
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "suspense",
+          "ordem_base": 3
+        },
+        {
+          "intencao": "spec",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 4
+        },
+        {
+          "intencao": "documento",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 2
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "epico",
+          "ordem_base": 2
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "impacto",
+          "ordem_base": 1
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "veredito",
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "kinetic",
+        "acervo"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Texto10_LetterCascade",
+      "module": "./texto/AcervoTexto",
+      "export": "Texto10_LetterCascade",
+      "quando": "revelação gradual, suspense, nome próprio",
+      "roteamento": [
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "suspense",
+          "ordem_base": 0
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "reflexao",
+          "ordem_base": 0
+        },
+        {
+          "intencao": "citacao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 4
+        },
+        {
+          "intencao": "punchline",
+          "dominio": "tela_cheia",
+          "tom": "impacto",
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "acervo"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    }
+  ]
+}

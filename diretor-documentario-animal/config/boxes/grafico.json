@@ -1,0 +1,577 @@
+{
+  "schema_version": 2,
+  "box": "grafico",
+  "defaults": {
+    "piso_s": 3.0,
+    "teto_repeticoes": 2
+  },
+  "rotas_declaradas": [],
+  "elementos": [
+    {
+      "id": "Graf01_CounterGlow",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf01_CounterGlow",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "stat",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "stat",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 3
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf02_Odometer",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf02_Odometer",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "stat",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf03_DonutPercent",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf03_DonutPercent",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "percentual",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf04_GaugeMeter",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf04_GaugeMeter",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "percentual",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf05_VersusBars",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf05_VersusBars",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "comparacao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": true,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf06_VersusTug",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf06_VersusTug",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "comparacao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf07_TimelineRise",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf07_TimelineRise",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "tendencia",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf08_LinePulse",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf08_LinePulse",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "tendencia",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf09_RankList",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf09_RankList",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "ranking",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf10_BigStatCard",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf10_BigStatCard",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "stat",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf11_PieSlices",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf11_PieSlices",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "distribuicao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf12_MultiBars",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf12_MultiBars",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "distribuicao",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf13_DualLine",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf13_DualLine",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "tendencia_dupla",
+          "dominio": "tela_cheia",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf14_OvlCounterPunch",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf14_OvlCounterPunch",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "stat",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf15_OvlStatCorner",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf15_OvlStatCorner",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "stat",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Graf16_OvlProgressBar",
+      "module": "./graficos/AcervoGraficos",
+      "export": "Graf16_OvlProgressBar",
+      "quando": "",
+      "roteamento": [
+        {
+          "intencao": "percentual",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "valores",
+        "texto",
+        "kicker",
+        "sufixo"
+      ],
+      "requer": {
+        "nao_vazio": [
+          "valores"
+        ]
+      },
+      "requer_especial": "campos_render_ok",
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    }
+  ]
+}

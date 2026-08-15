@@ -1,0 +1,678 @@
+{
+  "schema_version": 2,
+  "box": "overlay",
+  "defaults": {
+    "piso_s": 2.5,
+    "teto_repeticoes": 2
+  },
+  "rotas_declaradas": [],
+  "elementos": [
+    {
+      "id": "Ovl01_ChapterBig",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl01_ChapterBig",
+      "quando": "abertura de CAPÍTULO sobre footage (kicker='CHAPTER 02')",
+      "roteamento": [
+        {
+          "intencao": "capitulo",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "legenda_doc",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        },
+        {
+          "intencao": "lowerthird",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        },
+        {
+          "intencao": "subcapitulo",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        },
+        {
+          "intencao": "item_lista",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "acervo"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl02_SubchapterLine",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl02_SubchapterLine",
+      "quando": "SUBCAPÍTULO/tópico discreto no topo",
+      "roteamento": [
+        {
+          "intencao": "subcapitulo",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "nota_lateral",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl03_LowerThird",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl03_LowerThird",
+      "quando": "lower-third: nome/lugar/rótulo (kicker=função)",
+      "roteamento": [
+        {
+          "intencao": "lowerthird",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "nota_lateral",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl04_FootnotePill",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl04_FootnotePill",
+      "quando": "NOTA DE RODAPÉ/fonte/disclaimer (kicker='Source')",
+      "roteamento": [
+        {
+          "intencao": "nota_fonte",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "local_tag",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl05_CornerTag",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl05_CornerTag",
+      "quando": "tag de arquivo/época canto sup-dir ('ARCHIVE · 1986')",
+      "roteamento": [
+        {
+          "intencao": "local_tag",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl06_CenterPunch",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl06_CenterPunch",
+      "quando": "palavra/frase de impacto central sobre a cena",
+      "roteamento": [],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": false,
+      "ban_motivo": "operador 06/08: 'banir o visual de vez'"
+    },
+    {
+      "id": "Ovl07_QuoteAttribution",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl07_QuoteAttribution",
+      "quando": "citação falada sobre footage (kicker=autor)",
+      "roteamento": [
+        {
+          "intencao": "citacao",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "lowerthird",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl08_SideNote",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl08_SideNote",
+      "quando": "anotação técnica lateral enquanto a cena roda",
+      "roteamento": [
+        {
+          "intencao": "nota_lateral",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl09_TickerCaption",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl09_TickerCaption",
+      "quando": "legenda documental na base (kicker=etiqueta)",
+      "roteamento": [
+        {
+          "intencao": "legenda_doc",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "nota_fonte",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "acervo"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl10_NumberBadge",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl10_NumberBadge",
+      "quando": "item de lista/ranking (kicker='#3')",
+      "roteamento": [
+        {
+          "intencao": "item_lista",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "legenda_doc",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 2
+        },
+        {
+          "intencao": "subcapitulo",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 2
+        },
+        {
+          "intencao": "veredito_item",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 2
+        },
+        {
+          "intencao": "preco",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl11_SpecBadge",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl11_SpecBadge",
+      "quando": "spec/número falado sobre o footage ('17 • LBS DRAG')",
+      "roteamento": [
+        {
+          "intencao": "spec",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto",
+          "kicker"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl12_GiantStat",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl12_GiantStat",
+      "quando": "número dramático GIGANTE sobre o footage",
+      "roteamento": [
+        {
+          "intencao": "stat",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "veredito_item",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        },
+        {
+          "intencao": "preco",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl13_PriceTag",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl13_PriceTag",
+      "quando": "preço estilizado sobre produto ('$450')",
+      "roteamento": [
+        {
+          "intencao": "preco",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 0,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl14_PillVerdict",
+      "module": "./texto/AcervoTextoOverlay",
+      "export": "Ovl14_PillVerdict",
+      "quando": "nome do item + veredito de 1 linha",
+      "roteamento": [
+        {
+          "intencao": "veredito_item",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        },
+        {
+          "intencao": "legenda_doc",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 3
+        }
+      ],
+      "peso_operador": 1,
+      "exibe": [
+        "texto",
+        "kicker"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": null,
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [
+        "acervo"
+      ],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl15_MarcoTemporal",
+      "module": "./overlays/MarcoTemporal",
+      "export": "Ovl15_MarcoTemporal",
+      "quando": "retorno do ano atual para um ano ou data do passado; overlay sobre o take com vinheta e rolagem da direita para a esquerda",
+      "roteamento": [
+        {
+          "intencao": "data_retroativa",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 1,
+      "uso_obrigatorio": true,
+      "exibe": [
+        "texto"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": 4,
+      "piso_s": 4.2,
+      "contrato_timeline": {
+        "tipo": "overlay_take_saida_sincrona",
+        "dur_take_s": 5.5,
+        "offset_elemento_s": 1.3,
+        "dur_elemento_s": 4.2,
+        "proibir_corte_interno": true,
+        "proibir_transicao": true,
+        "saida_mesmo_frame": true
+      },
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Ovl16_MarcoTemporalProgressivo",
+      "nome": "Marco Temporal Progressivo",
+      "status": "oficial",
+      "aprovado_operador_em": "2026-08-14",
+      "module": "./overlays/MarcoTemporal",
+      "export": "Ovl16_MarcoTemporalProgressivo",
+      "quando": "ano passado ligado explicitamente ao presente ou ano futuro; linha temporal amarela avança da esquerda para a direita",
+      "porque_usar": "materializar visualmente a continuidade ou o avanço do tempo sem interromper o take documental",
+      "diretriz_editorial": {
+        "usar_quando": [
+          "um ano passado estiver ligado semanticamente ao presente, como algo que começou no passado e continua, permanece ou ainda vale hoje",
+          "um ano futuro for citado como previsão, meta, projeção ou acontecimento por vir",
+          "o ano estiver em numeral ou escrito por extenso em português, inglês, espanhol ou alemão"
+        ],
+        "nao_usar_quando": [
+          "houver somente dia e mês, sem ano",
+          "um ano passado for apenas uma menção histórica isolada; nesse caso usar a rota data_retroativa",
+          "não existir relação temporal clara entre o ano citado e o presente ou o futuro"
+        ],
+        "como_usar": [
+          "passado ligado ao presente: ano citado → ano corrente calculado no momento da produção",
+          "ano futuro: ano corrente calculado no momento da produção → ano citado",
+          "até 200 anos de intervalo, mostrar marcos por década; acima de 200 anos, mostrar marcos por século",
+          "a linha progride obrigatoriamente da esquerda para a direita; início e fim recebem ponto, cor e destaque amarelos"
+        ]
+      },
+      "roteamento": [
+        {
+          "intencao": "data_progressiva",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 1,
+      "uso_obrigatorio": true,
+      "exibe": [
+        "texto"
+      ],
+      "requer": {
+        "todos": [
+          "texto"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": 4,
+      "piso_s": 4.2,
+      "contrato_timeline": {
+        "tipo": "overlay_take_saida_sincrona",
+        "dur_take_s": 5.5,
+        "offset_elemento_s": 1.3,
+        "dur_elemento_s": 4.2,
+        "hold_inicial_s": 1.0,
+        "avanco_s": 1.7,
+        "hold_final_s": 1.5,
+        "proibir_corte_interno": true,
+        "proibir_transicao": true,
+        "saida_mesmo_frame": true
+      },
+      "grupo_moldura": null,
+      "teto_repeticoes": null,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    }
+  ]
+}

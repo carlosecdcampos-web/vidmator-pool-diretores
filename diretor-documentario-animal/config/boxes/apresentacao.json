@@ -1,0 +1,212 @@
+{
+  "schema_version": 2,
+  "box": "apresentacao",
+  "defaults": {
+    "piso_s": 2.5,
+    "teto_repeticoes": 2
+  },
+  "rotas_declaradas": [],
+  "elementos": [
+    {
+      "id": "Apres01_QuadroVideoCinematico",
+      "nome": "Quadro de Vídeo Cinematográfico",
+      "status": "oficial",
+      "aprovado_operador_em": "2026-08-14",
+      "module": "./apresentacoes/QuadroVideoCinematografico",
+      "export": "Apres01_QuadroVideoCinematico",
+      "quando": "take de vídeo documental, de arquivo, câmera de segurança, celular ou outra filmagem que mereça destaque dentro de um quadro; o próprio take preenche o fundo desfocado",
+      "porque_usar": "destacar uma filmagem real sem interromper sua continuidade, transformando o próprio take em fundo e conteúdo central sincronizados",
+      "diretriz_editorial": {
+        "usar_quando": [
+          "a cena utilizar vídeo e o take tiver valor documental, de evidência, arquivo ou registro real",
+          "o enquadramento original do vídeo se beneficiar de uma área central destacada",
+          "for desejável variar a apresentação do take sem acrescentar texto ou trocar a mídia"
+        ],
+        "nao_usar_quando": [
+          "a mídia da cena for fotografia ou qualquer imagem estática",
+          "a cena já tiver outro elemento dono da tela ou outra apresentação especial",
+          "o enquadramento central esconder a ação importante",
+          "a cena anterior ou seguinte já usar qualquer apresentação da família vídeo cinematográfico; deve existir ao menos uma cena neutra completa entre elas"
+        ],
+        "como_usar": [
+          "usar exatamente o mesmo vídeo e o mesmo instante no fundo e no quadro central",
+          "mostrar o fundo imediatamente, desfocado e escurecido, enquanto somente o quadro central entra de baixo para cima",
+          "entrar e sair por corte seco; a apresentação permanece até o último frame do take"
+        ]
+      },
+      "roteamento": [
+        {
+          "intencao": "destaque_take",
+          "dominio": "apresentacao",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 1,
+      "uso_obrigatorio": false,
+      "midias_permitidas": [
+        "video"
+      ],
+      "exibe": [],
+      "requer": {
+        "todos": []
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": 2.5,
+      "contrato_timeline": {
+        "tipo": "apresentacao_take",
+        "midia_obrigatoria": "video",
+        "entrada_interna_s": 0.55,
+        "mesmo_take_sincronizado": true,
+        "proibir_transicao": true,
+        "saida_no_corte_da_cena": true
+      },
+      "grupo_moldura": "video_cinematico",
+      "grupo_antifadiga": "video_cinematico",
+      "min_cenas_neutras": 1,
+      "teto_repeticoes": 4,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Apres02_FaixaVideoCinematico",
+      "nome": "Faixa de Vídeo Cinematográfica",
+      "status": "oficial",
+      "aprovado_operador_em": "2026-08-14",
+      "module": "./apresentacoes/FaixaVideoCinematografico",
+      "export": "Apres02_FaixaVideoCinematico",
+      "quando": "take de vídeo cuja ação se beneficie de um recorte cinematográfico horizontal de ponta a ponta, mantendo o próprio take ampliado, desfocado e escurecido no fundo",
+      "porque_usar": "dar destaque panorâmico a uma filmagem real e variar o enquadramento sem trocar a mídia nem interromper a continuidade do take",
+      "diretriz_editorial": {
+        "usar_quando": [
+          "a cena utilizar vídeo e possuir ação, paisagem ou movimento que continue legível num recorte horizontal amplo",
+          "for desejável um destaque mais expansivo que o quadro central, atravessando a tela de lado a lado",
+          "o recorte vertical e o zoom de preenchimento valorizarem o assunto principal do take"
+        ],
+        "nao_usar_quando": [
+          "a mídia da cena for fotografia ou qualquer imagem estática",
+          "o assunto importante ocupar o topo ou a base do enquadramento e puder ser cortado pelo formato de faixa",
+          "a cena já tiver outro elemento dono da tela ou outra apresentação especial",
+          "a cena anterior ou seguinte já usar qualquer apresentação da família vídeo cinematográfico; deve existir ao menos uma cena neutra completa entre elas"
+        ],
+        "como_usar": [
+          "usar exatamente o mesmo vídeo e o mesmo instante no fundo e na faixa central",
+          "preencher a faixa de lado a lado com recorte cover centralizado, mantendo a mesma altura do Quadro de Vídeo Cinematográfico",
+          "desenhar somente as linhas branca superior e inferior, sem contorno nas laterais",
+          "mostrar o fundo imediatamente, desfocado e escurecido, enquanto somente a faixa entra de baixo para cima",
+          "entrar e sair por corte seco; a apresentação permanece até o último frame do take"
+        ]
+      },
+      "roteamento": [
+        {
+          "intencao": "destaque_take",
+          "dominio": "apresentacao",
+          "tom": null,
+          "ordem_base": 1
+        }
+      ],
+      "peso_operador": 1,
+      "uso_obrigatorio": false,
+      "midias_permitidas": [
+        "video"
+      ],
+      "exibe": [],
+      "requer": {
+        "todos": []
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": 2.5,
+      "contrato_timeline": {
+        "tipo": "apresentacao_take",
+        "midia_obrigatoria": "video",
+        "entrada_interna_s": 0.55,
+        "mesmo_take_sincronizado": true,
+        "proibir_transicao": true,
+        "saida_no_corte_da_cena": true
+      },
+      "grupo_moldura": "video_cinematico",
+      "grupo_antifadiga": "video_cinematico",
+      "min_cenas_neutras": 1,
+      "teto_repeticoes": 4,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    },
+    {
+      "id": "Apres03_CarrosselFotografico",
+      "nome": "Carrossel Fotográfico",
+      "status": "oficial",
+      "aprovado_operador_em": "2026-08-14",
+      "module": "./apresentacoes/CarrosselFotografico",
+      "export": "Apres03_CarrosselFotografico",
+      "quando": "a fala apresentar uma coleção, sequência ou grupo de quatro assuntos visualmente relacionados e uma fotografia principal puder encerrar a progressão em tela cheia",
+      "porque_usar": "transformar uma coleção de fotografias relacionadas em progressão visual, conduzindo o olhar até a imagem principal sem perder o vínculo entre os itens",
+      "diretriz_editorial": {
+        "usar_quando": [
+          "a narração mencionar uma coleção, lista, grupo ou sequência de pessoas, lugares, objetos, eventos ou exemplos relacionados",
+          "existirem exatamente quatro fotografias semanticamente relacionadas disponíveis para a cena",
+          "uma das quatro fotografias representar o foco principal e puder ser a primeira mídia do conjunto, destinada a ocupar a tela inteira no final"
+        ],
+        "nao_usar_quando": [
+          "a cena tratar de um único conceito sem coleção ou progressão visual real",
+          "as fotografias disponíveis não tiverem relação semântica clara com a mesma fala",
+          "a cena usar vídeo; esta apresentação é exclusiva para fotografias",
+          "a cena anterior já usar uma apresentação especial; deve existir ao menos uma cena neutra completa antes de outro Carrossel Fotográfico"
+        ],
+        "como_usar": [
+          "usar a fotografia principal como mídia da cena e fornecer outras três fotografias relacionadas em extras",
+          "preservar a ordem visual de quatro para um, terminando com a fotografia principal em tela cheia",
+          "entrar obrigatoriamente com a transição Apagão de Filme exatamente no primeiro frame da cena e tocar junto o SFX shutter pareado",
+          "manter a camada-base em corte seco e não criar outra transição dentro da animação nem na saída"
+        ]
+      },
+      "roteamento": [
+        {
+          "intencao": "colecao_visual",
+          "dominio": "apresentacao",
+          "tom": null,
+          "ordem_base": 2
+        }
+      ],
+      "peso_operador": 1,
+      "uso_obrigatorio": false,
+      "midias_permitidas": [
+        "imagem"
+      ],
+      "exibe": [],
+      "requer": {
+        "todos": [
+          "extras"
+        ]
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": 5.5,
+      "contrato_timeline": {
+        "tipo": "apresentacao_multiimagem",
+        "midia_obrigatoria": "imagem",
+        "quantidade_imagens": 4,
+        "duracao_min_s": 5.5,
+        "entrada_obrigatoria": {
+          "tipo": "transicao",
+          "clipe": "apagao",
+          "sfx_par": "shutter"
+        },
+        "saida_no_corte_da_cena": true
+      },
+      "grupo_moldura": "carrossel_fotografico",
+      "grupo_antifadiga": "carrossel_fotografico",
+      "min_cenas_neutras": 1,
+      "teto_repeticoes": 2,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    }
+  ]
+}

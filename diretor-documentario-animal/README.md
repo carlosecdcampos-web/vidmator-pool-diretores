@@ -2,9 +2,22 @@
 
 O primeiro diretor do pool — e o MOLDE de todos os futuros (REGRA-MÃE: diretor
 novo = clonar esta estrutura + adaptar só as especificações do nicho, nunca do
-zero). Estado em 07/08/2026: **v7 PIRANHA entregue e aprovado** ("PARABÉNS PARA
-NÓS, ficou muito muito bom"), **ESPEC-V8 executada e provada em bancada**, leis
-do VEO validadas ao vivo pelo operador.
+zero). Estado em 15/08/2026: **Leopardo-das-neves é o golden visual vigente**;
+Onça e Tigre são referências/fixtures de evolução. O caminho canônico, boxes,
+EditPlan, gates, reuso seguro e frota VEO N=1 compatível estão registrados no
+corpo. Este diretório preserva somente o cérebro/política do nicho.
+
+## Estado atual preservado
+
+- `config/presets.json`: políticas dos diretores; `doc_realista` é o Diretor Animal.
+- `config/boxes/`: contratos declarativos dos elementos disponíveis ao Maestro.
+- `golden/current.json`: ponteiro do golden; manifesto imutável do Leopardo ao lado.
+- `especs/`: evolução V9–V15, execução canônica, resolver, canário e boxes.
+- `relatorios/`: E2E Leopardo, análise Piter e handoff operacional.
+
+Esses arquivos não executam produção. A única rota continua no repositório
+`vidmator`; alterar o Diretor significa mudar configuração/política consumida por
+essa rota, nunca criar outro runner.
 
 ## Divisão de responsabilidade (decisão do operador, 07/08)
 

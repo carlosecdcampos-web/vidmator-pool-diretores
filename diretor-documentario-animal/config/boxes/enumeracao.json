@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "box": "enumeracao",
+  "defaults": {
+    "piso_s": 2.5,
+    "teto_repeticoes": 2
+  },
+  "rotas_declaradas": [],
+  "elementos": [
+    {
+      "id": "Enum01_CollagePolaroidSequencial",
+      "nome": "Collage Sequencial de Polaroids",
+      "status": "oficial",
+      "aprovado_operador_em": "2026-08-14",
+      "module": "./PolaroidCollage",
+      "export": "Enum01_CollagePolaroidSequencial",
+      "quando": "a narração apresentar de três a seis assuntos fotográficos autônomos pertencentes à mesma coleção semântica, pronunciados como uma enumeração",
+      "porque_usar": "transformar a cadência do word-pop numa coleção visual: cada item falado acrescenta uma nova polaroid ao mesmo monte central",
+      "diretriz_editorial": {
+        "usar_quando": [
+          "existirem de três a seis itens concretos, nomeados e visualmente distintos na mesma enumeração falada",
+          "todos os itens pertencerem à mesma categoria coerente, como animais, países, personagens, lugares ou objetos históricos",
+          "houver uma mídia resolvida e semanticamente correta para cada item"
+        ],
+        "nao_usar_quando": [
+          "a lista contiver ações, verbos, partes do corpo, posições espaciais, atributos, fragmentos ou conceitos abstratos",
+          "os itens não formarem uma coleção fotográfica coerente entre si",
+          "faltar a mídia de qualquer item ou a coleção tiver menos de três ou mais de seis polaroids"
+        ],
+        "como_usar": [
+          "mostrar a primeira polaroid desde o primeiro frame da janela",
+          "inserir cada polaroid seguinte exatamente na batida do respectivo item falado, acima das anteriores, com pulso leve de escala e opacidade",
+          "manter todas as polaroids anteriores visíveis até o fim da enumeração, formando um único monte central",
+          "tocar obrigatoriamente o SFX enum_click em cada nova polaroid depois da primeira; o clique e a aparição devem começar no mesmo frame",
+          "se qualquer mídia ou SFX obrigatório faltar, rebaixar a janela para micro-takes em vez de renderizar uma collage parcial ou silenciosa"
+        ]
+      },
+      "roteamento": [
+        {
+          "intencao": "colecao_fotografica",
+          "dominio": "enumeracao",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 1,
+      "uso_obrigatorio": true,
+      "midias_permitidas": [
+        "video",
+        "imagem"
+      ],
+      "exibe": [
+        "colecao"
+      ],
+      "requer": {
+        "todos": [
+          "itens",
+          "takes"
+        ]
+      },
+      "requer_especial": "polaroid_elegivel",
+      "max_palavras": null,
+      "piso_s": 2.5,
+      "contrato_timeline": {
+        "tipo": "enumeracao_polaroid",
+        "min_itens": 3,
+        "max_itens": 6,
+        "uma_polaroid_por_item": true,
+        "primeira_visivel_no_inicio": true,
+        "empilhar_ate_o_fim": true,
+        "sfx_por_nova_entrada": "enum_click",
+        "sfx_na_primeira": false,
+        "sfx_obrigatorio": true,
+        "falhar_fechado_sem_colecao_completa": true
+      },
+      "grupo_moldura": null,
+      "teto_repeticoes": 2,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    }
+  ]
+}

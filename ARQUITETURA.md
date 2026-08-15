@@ -2,6 +2,13 @@
 
 ## O princípio fundamental
 
+**Há um único motor e um único caminho de execução no `vidmator`.** O pool não
+contém runners, recuperadores ou pipelines alternativos. Cada diretor fornece
+política/configuração ao mesmo compilador editorial: permissões, proibições,
+densidade, linguagem visual e contratos do nicho. Qualidade, isolamento por job,
+ledger, sourcing, reuso seguro, EditPlan, gates e render são mecanismos universais
+do corpo e nunca são duplicados por diretor.
+
 **CADA DIRETOR CARREGA JUNTO DE SI:**
 1. as leis do nicho;
 2. as ESPECs;
@@ -33,12 +40,15 @@ obrigatória, a ser feita ANTES do segundo diretor entrar em produção:
    abertura ligada/desligada e sua duração, cadência-alvo do dinamismo, famílias
    de overlay permitidas e cotas, teto de look mono, uso de mapas/pessoas/datas,
    política de trilha/SFX, leis do VEO do nicho (GUIA), etc.
-2. O corpo LÊ o preset do diretor ativo; o código dos passes permanece genérico.
+2. O corpo LÊ o preset do diretor ativo; o código dos passes e a rota operacional
+   permanecem únicos e genéricos.
 3. Ajustar o estilo de um diretor = editar o preset/ESPEC NA PASTA DELE no pool —
    nenhum outro diretor é tocado. Mudança no CÓDIGO do corpo só é legítima quando
    é mecanismo novo (disponível a todos via knob), nunca estilo hard-coded.
 4. Regra de revisão: um diff no corpo que mude o VISUAL de um diretor existente
    sem knob novo = violação da doutrina; volta como preset.
+5. Regra de execução: nenhum arquivo deste pool pode chamar produção, VEO ou render.
+   O pool descreve decisões; somente o pipeline canônico do Vidmator as executa.
 
 ## Convenção de trabalho
 

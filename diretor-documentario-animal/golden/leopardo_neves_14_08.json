@@ -1,0 +1,78 @@
+{
+  "schema": "vidmator_golden_v2",
+  "golden_id": "leopardo_neves_14_08",
+  "role": "canonical_current",
+  "approved_by": "operator",
+  "approved_at": "2026-08-14T20:20:20-03:00",
+  "supersedes": {
+    "golden_id": "onca_rerender_13_08",
+    "new_role": "historical_fixture"
+  },
+  "artifact": {
+    "path": "_saida/leopardo_neves.mp4",
+    "sha256": "d7ceb7af126a37f0d514c8bb2597367cb33064fe33d1181d30d02ab440d4cfe9",
+    "size": 322331302,
+    "duration_seconds": 395.69
+  },
+  "inputs": {
+    "signed_edit_plan": {
+      "path": "_workspace/_jobs/leopardo_neves/estado/checkpoints/34_compilar_edit_plan_timeline.json",
+      "sha256": "44555dd243768d397e80fc649712c0629ec2d6a64330302398537fa5b53795cd",
+      "size": 160639
+    },
+    "render_timeline": {
+      "path": "remotion/timeline_leopardo_neves.json",
+      "sha256": "9849deb89243feccb548f479ac124511414eec64f1e6006e67fde91316e18907",
+      "size": 125385
+    },
+    "render_preflight": {
+      "path": "remotion/preflight_leopardo_neves.json",
+      "sha256": "b36aa8f7f12a69e1168566cd42e1f36aa64ce161cebfe912ebe51b3a6cf81f54",
+      "size": 250,
+      "frames_tested": 223,
+      "decoder": "@remotion/media",
+      "offthread_fallback": false
+    }
+  },
+  "approved_invariants": [
+    "high_narration_edit_sync",
+    "punchlines_land_on_the_spoken_reveal",
+    "text_elements_are_precise_and_dynamic",
+    "cinematic_supporting_shots_may_show_prey_or_tracks_when_narratively_justified",
+    "no_wrong_sfx_under_editorial_elements",
+    "no_scene_fragments_around_editorial_elements",
+    "safe_declared_reuse_preserves_temporal_distance",
+    "single_canonical_pipeline_materializes_the_edit_plan"
+  ],
+  "negative_constraints": [
+    {
+      "kind": "marco_temporal_semantic",
+      "ranges_seconds": [[125.67, 131.17], [271.39, 276.89]],
+      "rule": "Ovl15_MarcoTemporal is exclusive to calendar years; quantities such as thousand animals must never select it."
+    },
+    {
+      "kind": "counter_persists",
+      "range_seconds": [17.1, 21.69],
+      "rule": "A measurement counter must leave with its spoken measurement."
+    },
+    {
+      "kind": "long_visual_hold",
+      "ranges_seconds": [[9.84, 21.69], [82.18, 91.29], [178.92, 188.91], [227.57, 240.08], [262.9, 271.39]],
+      "rule": "These holds were accepted only in this artifact and are not the target behavior for future E2E runs."
+    },
+    {
+      "kind": "container_black_tail",
+      "range_seconds": [395.44, 395.69],
+      "rule": "The rendered container must end at the signed timeline duration."
+    }
+  ],
+  "correct_reference": [
+    {
+      "kind": "marco_temporal_historico",
+      "range_seconds": [222.07, 227.57],
+      "narration": "1970",
+      "rule": "This is the approved semantic use of Ovl15_MarcoTemporal."
+    }
+  ],
+  "promotion_policy": "Copy approved invariants; reject every negative constraint. The golden fixes behavior, not byte equality for future renders."
+}

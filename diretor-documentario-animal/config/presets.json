@@ -1,0 +1,574 @@
+{
+  "default": {
+    "descricao": "receita genérica (fallback)",
+    "vintage": false,
+    "efeito_intensidade": 0.4,
+    "moods_pool": [
+      "frio",
+      "nostalgia",
+      "tenso",
+      "revelacao"
+    ],
+    "apresentacao_freq": 0.45,
+    "apresentacao_catalogo_por_min": 1.25,
+    "apresentacao_spotlight_max_share": 0.3,
+    "apresentacao_pool": [
+      "film",
+      "quadro",
+      "polaroid",
+      "lupa",
+      "reveal",
+      "spotlight",
+      "parallax",
+      "split",
+      "grid"
+    ],
+    "fonte_hint": null,
+    "ritmo_seg": 6.0,
+    "sfx": {
+      "transicao": [
+        "sfx/click_camera.mp3",
+        "sfx/click_mech.mp3"
+      ],
+      "entrada": [
+        "sfx/ding_bright.mp3",
+        "sfx/chime_sparkle.mp3"
+      ],
+      "glitch": []
+    },
+    "glitch_topico": false,
+    "sfx_vols": {
+      "transicao": 0.15,
+      "entrada": 0.2,
+      "take_flash": 0.2,
+      "enum_click": 0.15,
+      "glitch": 0.2,
+      "first": 0.2,
+      "riser": 0.2,
+      "typing": 0.09,
+      "paper": 0.1,
+      "cta_ding": 0.2,
+      "click": 0.15,
+      "counter": 0.2
+    },
+    "sfx_vol_max": 0.2,
+    "texto_seg_por_palavra": 2.0,
+    "texto_min_s": 3.0,
+    "antecipa_max_s": 0.0,
+    "infografico_min_s": 3.0,
+    "enumeracoes": true,
+    "enum_min_itens": 3,
+    "enum_max_palavras_item": 3,
+    "enum_ultimo_dur": 1.6,
+    "enum_pop_escurecer": 0.3,
+    "mood_so_com_texto": true,
+    "mood_semtexto": {
+      "overlay": "D:/AC Creator HUB/Vidmator/acervo/overlays/CapCut/Linhas de TV - CapCut.mp4",
+      "sfx": "D:/AC Creator HUB/Vidmator/acervo/sfx/glitch/glitch_digital_01.mp3",
+      "vol": 0.2
+    },
+    "sfx_counter": "D:/AC Creator HUB/Vidmator/acervo/sfx/ui/counter_digital.mp3",
+    "micro_takes": true,
+    "take_gap_fusao": 0.9,
+    "take_flash_frames": 4,
+    "marcacoes_topico": {
+      "capitulo": false,
+      "transicoes": true,
+      "capitulo_dur": 3.0,
+      "capitulo_max": 99,
+      "snap_max_s": 2.5
+    },
+    "max_usos_por_fonte": 1,
+    "mapas_variantes": [
+      "CountryCharacterMap",
+      "Map01_CountryFocus",
+      "Map02_MultiHighlight",
+      "Map03_RouteArc",
+      "Map04_PinCallout",
+      "Map05_RegionZoom",
+      "Map06_PathTrail",
+      "Map08_StatMap",
+      "Map09_EarthZoom",
+      "Map10_SatPinApp",
+      "Map12_SatTarget",
+      "Map13_CineLocation"
+    ],
+    "edicao": {
+      "acervo_texto": true,
+      "palavras_por_elemento": 35,
+      "respiro_s": 4.0,
+      "respiro_overlay_s": 3.0,
+      "texto_por_min_hook": 3.0,
+      "texto_por_min_miolo": 2.0,
+      "hook_ate_s": 120.0,
+      "overlay_take_por_min": 1.8,
+      "overlay_deserto_max_s": 60.0,
+      "overlay_cobertura_min_pct": 12.0,
+      "overlay_cobertura_max_pct": 15.0
+    },
+    "abertura": {
+      "dur_min": 5.0,
+      "dur_max": 7.0,
+      "fade_s": 1.5
+    },
+    "_default_sync": "[passo 0 ESPEC-EDICAO-DINAMICA 05/08] default sincronizado com os valores de SISTEMA do doc_realista (ordem do operador: 'o default real deveria ser os do doc_realista'). Causa: render manual sem NICHO caia no default velho (glitch_topico ligado, sem sfx_vols) -> SFX solto e alto. Identidade de conteudo e governanca de pipeline NAO sao copiadas.",
+    "_vision_poster_gate": "[PoC Vision 05/08 — ordem do operador: 'analisar 72 cenas foi 1h... FORA DE COGITACAO'] Pre-gate de POSTERS em lote no resolver_identidade: 1 chamada Vision julga os posters (~50KB) de ate 4 candidatos ANTES de baixar qualquer video; reprovado nem baixa. Medicao-base (manifesto predadores): 88% dos julgamentos eram FAIL apos download completo. O vet_contrato integral segue sendo o juiz final do escolhido (nenhum invariante afrouxado). Kill-switch: env VISION_POSTER_GATE=0.",
+    "vision_poster_gate": true,
+    "sfx_vol_por_variante": {
+      "Texto01_Typewriter": 0.13,
+      "Texto10_LetterCascade": 0.13,
+      "Ovl11_SpecBadge": 0.15,
+      "Texto05_BoxedKicker": 0.15,
+      "Ovl09_TickerCaption": 0.15,
+      "Ovl05_CornerTag": 0.15,
+      "Ovl08_SideNote": 0.15,
+      "Ovl04_FootnotePill": 0.15
+    },
+    "_sfx_vol_por_variante": "[S8 — operador 06/08] 'os que eu sinalizar explicitamente que devam ser 0.15 ou menor, esses deverao ser o DEFAULT para esses sfx especificos'. Quem nao esta aqui herda o papel 'entrada' (0.20). Teto sfx_vol_max=0.20 continua clampando tudo.",
+    "sfx_por_variante": {
+      "Graf01_CounterGlow": "sfx/ui/counter_digital.mp3",
+      "Graf02_Odometer": "sfx/ui/counter_digital.mp3",
+      "Graf10_BigStatCard": "sfx/ui/counter_digital.mp3",
+      "Graf14_OvlCounterPunch": "sfx/ui/counter_digital.mp3",
+      "Graf15_OvlStatCorner": "sfx/ui/counter_digital.mp3",
+      "Ovl12_GiantStat": "sfx/ui/counter_digital.mp3",
+      "Graf03_DonutPercent": "sfx/ui/counter_digital.mp3",
+      "Graf04_GaugeMeter": "sfx/ui/counter_digital.mp3",
+      "Graf16_OvlProgressBar": "sfx/ui/counter_digital.mp3",
+      "Texto07_StampImpact": "sfx/impact/impact_thud_01.mp3",
+      "Texto09_UnderlineDraw": "sfx/whoosh/whoosh_air_01.mp3",
+      "Texto03_WordPop": "sfx/impact/impact_hit_01.mp3",
+      "Texto06_SplitBar": "sfx/whoosh/whoosh_air_01.mp3",
+      "Texto10_LetterCascade": "sfx/ui/typewriter_tapping.mp3",
+      "Texto01_Typewriter": "sfx/ui/typewriter_tapping.mp3",
+      "Texto08_GradientGlow": "sfx/impact/impact_boom_01.mp3",
+      "Texto02_HighlightSweep": "sfx/whoosh/whoosh_air_01.mp3",
+      "Texto05_BoxedKicker": "sfx/ui/ui_click_01.mp3",
+      "Ovl03_LowerThird": "sfx/whoosh/whoosh_air_01.mp3",
+      "Ovl02_SubchapterLine": "sfx/whoosh/whoosh_air_01.mp3",
+      "Ovl14_PillVerdict": "sfx/impact/impact_thud_01.mp3",
+      "Ovl09_TickerCaption": "sfx/ui/ui_click_01.mp3",
+      "Ovl11_SpecBadge": "sfx/ui/ui_click_01.mp3",
+      "Ovl05_CornerTag": "sfx/ui/ui_click_01.mp3",
+      "Ovl08_SideNote": "sfx/ui/ui_click_01.mp3",
+      "Ovl04_FootnotePill": "sfx/ui/ui_click_01.mp3",
+      "Ovl10_NumberBadge": "sfx/ui/counter_digital.mp3",
+      "Ovl07_QuoteAttribution": "sfx/bell/bell_chime_02.mp3",
+      "Ovl13_PriceTag": "sfx/ui/counter_digital.mp3",
+      "Ovl01_ChapterBig": "sfx/impact/impact_boom_01.mp3"
+    }
+  },
+  "estoicismo": {
+    "descricao": "filosofia/estoicismo — calmo, limpo, contemplativo (proposta do memento mori)",
+    "vintage": false,
+    "efeito_intensidade": 0.18,
+    "moods_pool": [
+      "frio",
+      "revelacao",
+      "nostalgia"
+    ],
+    "apresentacao_freq": 0.22,
+    "apresentacao_pool": [
+      "kenburns",
+      "parallax",
+      "reveal",
+      "spotlight"
+    ],
+    "fonte_hint": "serif",
+    "ritmo_seg": 8.0,
+    "hook_ate": 240,
+    "glitch_topico": false,
+    "sfx": {
+      "transicao": [
+        "sfx/click_camera.mp3",
+        "sfx/click_mech.mp3"
+      ],
+      "entrada": [
+        "sfx/ding_bright.mp3",
+        "sfx/chime_sparkle.mp3"
+      ],
+      "glitch": []
+    },
+    "cold_open": true
+  },
+  "documentario": {
+    "descricao": "WWII/história/guerra/biografia — vintage, época, cronologia (precisa do banco de época)",
+    "vintage": true,
+    "efeito_intensidade": 0.35,
+    "moods_pool": [
+      "frio",
+      "nostalgia",
+      "tenso",
+      "revelacao"
+    ],
+    "apresentacao_freq": 0.45,
+    "apresentacao_pool": [
+      "film",
+      "polaroid",
+      "lupa",
+      "reveal",
+      "spotlight",
+      "parallax"
+    ],
+    "fonte_hint": "serif",
+    "ritmo_seg": 6.0,
+    "banco_epoca": true,
+    "glitch_topico": false,
+    "sfx": {
+      "transicao": [
+        "sfx/click_camera.mp3",
+        "sfx/click_mech.mp3"
+      ],
+      "entrada": [
+        "sfx/ding_bright.mp3",
+        "sfx/chime_sparkle.mp3"
+      ],
+      "glitch": []
+    },
+    "cold_open": true,
+    "video_frac": 0.6,
+    "vet_relevancia": true
+  },
+  "true_crime": {
+    "descricao": "true crime/mistério — tenso, suspense, evidências",
+    "vintage": true,
+    "efeito_intensidade": 0.55,
+    "moods_pool": [
+      "tenso",
+      "misterioso",
+      "frio",
+      "revelacao"
+    ],
+    "apresentacao_freq": 0.5,
+    "apresentacao_pool": [
+      "lupa",
+      "spotlight",
+      "polaroid",
+      "film",
+      "reveal",
+      "split"
+    ],
+    "fonte_hint": "typewriter",
+    "ritmo_seg": 5.5
+  },
+  "saude": {
+    "descricao": "saúde/espiritualidade — limpo, claro, suave, ambiente",
+    "vintage": false,
+    "efeito_intensidade": 0.08,
+    "moods_pool": [
+      "frio",
+      "revelacao"
+    ],
+    "apresentacao_freq": 0.18,
+    "apresentacao_pool": [
+      "kenburns",
+      "parallax",
+      "reveal"
+    ],
+    "fonte_hint": "clean",
+    "ritmo_seg": 8.5
+  },
+  "ttm": {
+    "descricao": "TTM — espiritualidade + saúde/somático (calmo, cinematográfico)",
+    "vintage": false,
+    "efeito_intensidade": 0.16,
+    "moods_pool": [
+      "frio",
+      "revelacao",
+      "nostalgia"
+    ],
+    "apresentacao_freq": 0.22,
+    "apresentacao_pool": [
+      "kenburns",
+      "parallax",
+      "reveal",
+      "spotlight"
+    ],
+    "fonte_hint": "clean",
+    "ritmo_seg": 8.0,
+    "hook_ate": 240,
+    "glitch_topico": false,
+    "sfx": {
+      "transicao": [
+        "sfx/click_camera.mp3",
+        "sfx/click_mech.mp3"
+      ],
+      "entrada": [
+        "sfx/ding_bright.mp3",
+        "sfx/chime_sparkle.mp3"
+      ],
+      "glitch": []
+    },
+    "video_frac": 0.5,
+    "vet_relevancia": true,
+    "produto_cta": {
+      "ativo": true,
+      "img": "cta/produto.png",
+      "qr": "cta/qr.png",
+      "headline": "THE FULL HEALING IN MOTION GUIDE",
+      "offer": "LINK IN THE FIRST PINNED COMMENT"
+    },
+    "fonte_imagens": "hibrido",
+    "cold_open": true
+  },
+  "survival": {
+    "glitch_topico": false,
+    "sfx": {
+      "glitch": []
+    },
+    "hook_ate": 180,
+    "fonte_hint": "impact",
+    "efeito_intensidade": 0.22,
+    "video_frac": 0.6,
+    "vet_relevancia": true,
+    "cold_open": true,
+    "mascote": {
+      "ativo": true,
+      "banco": "F:/Canal Dark/Aplicativo de Edição/banco-videos/mascote_galo",
+      "cada": [
+        2,
+        3
+      ]
+    }
+  },
+  "motos": {
+    "descricao": "review / top-N automotivo — limpo, energetico, pouco efeito, sem vintage",
+    "vintage": false,
+    "efeito_intensidade": 0.12,
+    "moods_pool": [
+      "revelacao"
+    ],
+    "apresentacao_freq": 0.3,
+    "apresentacao_pool": [
+      "spotlight",
+      "reveal",
+      "parallax",
+      "polaroid"
+    ],
+    "fonte_hint": "impact",
+    "ritmo_seg": null,
+    "glitch_topico": false,
+    "sfx": {
+      "transicao": [],
+      "entrada": [],
+      "glitch": []
+    }
+  },
+  "romance": {
+    "glitch_topico": false,
+    "sfx": {
+      "glitch": []
+    },
+    "hook_ate": 180,
+    "fonte_hint": "clean",
+    "efeito_intensidade": 0.14,
+    "video_frac": 0.5,
+    "vet_relevancia": true,
+    "cold_open": false,
+    "story_engine": true,
+    "ambiencia": {
+      "ativo": true,
+      "banco": "D:/Meu Drive/canal_dark_ambiencias",
+      "gain_db": -6
+    },
+    "foley": {
+      "ativo": true,
+      "banco": "D:/Meu Drive/canal_dark_foley",
+      "gain_db": -6
+    },
+    "personagens": {
+      "ativo": true,
+      "banco": "F:/Canal Dark/Aplicativo de Edição/banco-videos/personagens_historia"
+    }
+  },
+  "doc_realista": {
+    "nome_diretor": "Diretor de Documentario Animal",
+    "descricao": "[DIRETOR DE DOCUMENTARIO ANIMAL] Especializado em FAUNA: animais, comportamento, predacao, biomas vivos. EM COR (sem vintage). Criado 03/08 na PoC Amazonia. DECISAO DO OPERADOR 05/08: o escopo foi ESTREITADO para animal/fauna — a auditoria do acervo mediu 93,9% em corpora de animais contra 82,9% em lugar historico/arqueologico, e conciliar os dois num diretor so estava custando acerto nos dois. Arqueologia/historia sai daqui e vira um diretor PROPRIO, duplicado deste (ver ESPEC-DIRETOR-ANIMAL-RECALIBRACAO.md). A CHAVE do preset segue 'doc_realista' de proposito: e ela que os timelines/manifestos ja gravados referenciam — renomear a chave quebraria replay e lock.",
+    "vintage": false,
+    "efeito_intensidade": 0.3,
+    "moods_pool": [
+      "frio",
+      "nostalgia",
+      "tenso",
+      "revelacao"
+    ],
+    "apresentacao_freq": 0.45,
+    "apresentacao_pool": [
+      "film",
+      "quadro",
+      "polaroid",
+      "lupa",
+      "reveal",
+      "spotlight",
+      "parallax",
+      "split",
+      "grid"
+    ],
+    "fonte_hint": "clean",
+    "ritmo_seg": 6.0,
+    "banco_epoca": false,
+    "glitch_topico": false,
+    "sfx": {
+      "transicao": [
+        "sfx/click_camera.mp3",
+        "sfx/click_mech.mp3"
+      ],
+      "entrada": [
+        "sfx/ding_bright.mp3",
+        "sfx/chime_sparkle.mp3"
+      ],
+      "glitch": []
+    },
+    "cold_open": true,
+    "video_frac": 0.6,
+    "vet_relevancia": true,
+    "legibilidade": true,
+    "texto_seg_por_palavra": 2.0,
+    "texto_min_s": 3.0,
+    "antecipa_max_s": 0.0,
+    "infografico_min_s": 3.0,
+    "enumeracoes": true,
+    "enum_min_itens": 3,
+    "enum_max_palavras_item": 3,
+    "enum_ultimo_dur": 1.6,
+    "enum_pop_escurecer": 0.3,
+    "mood_so_com_texto": true,
+    "mood_semtexto": {
+      "overlay": "D:/AC Creator HUB/Vidmator/acervo/overlays/CapCut/Linhas de TV - CapCut.mp4",
+      "sfx": "D:/AC Creator HUB/Vidmator/acervo/sfx/glitch/glitch_digital_01.mp3",
+      "vol": 0.2
+    },
+    "sfx_counter": "D:/AC Creator HUB/Vidmator/acervo/sfx/ui/counter_digital.mp3",
+    "abre_com_video": true,
+    "vet_imagem": true,
+    "broll_diretrizes": "This is a REALISTIC NATURE/PLACES DOCUMENTARY. The entities SPOKEN in the line (species, animals, places, landscapes, natural phenomena) ARE the ideal b-roll: NAME them in the stock_query (e.g. 'jaguar stalking prey at night', 'Sahara desert dunes wind', 'Atlantic ocean storm waves'). Prefer real wildlife and landscape footage. REGION IS MANDATORY: every animal, plant and landscape must belong to the region this documentary is about — when the line uses a GENERIC term (predator, hunter, creature, wildlife), name a SPECIFIC species of THAT region in the query (Australia: saltwater crocodile, dingo; African savanna: lion, leopard), never a generic phrase like 'apex predator'. Also match the SCALE of the subject: if the documentary is about an apex predator, a small incidental animal is not an acceptable stand-in. NEVER put humans in the shot unless the line explicitly mentions people, tribes or explorers. NEVER roads, cars, parking lots, buildings or any sign of civilization. NEVER tragedy footage (fire, burning land, deforestation, pollution, carcasses, dead or injured animals, disaster) unless the line explicitly addresses it. NEVER unrelated objects, documents, books, maps, museum pieces or studio shots (a documentary object is legitimate ONLY when the visual contract requires it). NEVER use the words 'illustration', 'drawing', 'animation', 'cartoon' or 'art' in queries — real footage only.",
+    "vet_regras": "Reject if a HUMAN is visible unless the line explicitly mentions people/tribes/explorers. Reject books, documents, printed pages, museum objects, indoor/studio scenes, screens or maps. If the line names a species or place, the footage must actually show THAT species or place. Reject ANY illustration, drawing, cartoon, comic art, animation, painting, 3D render or AI-generated imagery — this is a REALISTIC documentary: real footage only. Also reject taxidermy, statues, scale models, dioramas, toys, miniatures, product mockups, obviously staged/posed studio stock, and frames with overlay text, logos or thumbnail graphics.",
+    "vet_video_rigor": "good",
+    "vet_atmosfera": true,
+    "usar_imagens_pd": false,
+    "micro_takes": true,
+    "take_gap_fusao": 0.9,
+    "take_flash_frames": 4,
+    "sfx_vol_max": 0.2,
+    "sfx_vols": {
+      "transicao": 0.15,
+      "entrada": 0.2,
+      "take_flash": 0.2,
+      "enum_click": 0.15,
+      "glitch": 0.2,
+      "first": 0.2,
+      "riser": 0.2,
+      "typing": 0.09,
+      "paper": 0.1,
+      "cta_ding": 0.2,
+      "click": 0.15,
+      "counter": 0.15
+    },
+    "contrato_visual": true,
+    "pre_render_lock": true,
+    "aprovacao": "manual",
+    "_mapas_variantes": "[GO 04/08, ESPEC-ACERVO 7.2.4] Variantes de mapa do acervo liberadas para este nicho. VAZIO/AUSENTE = comportamento de hoje (MapAnimation/SatelliteZoom), byte a byte — e o gating (I1) que protege os nichos do Piter. O detectar_mapas so escolhe entre as listadas aqui, e so se os dados exigidos existirem (filtro de elegibilidade). Nenhuma elegivel -> cai no padrao, nunca cena sem mapa.",
+    "mapas_variantes": [
+      "CountryCharacterMap",
+      "Map01_CountryFocus",
+      "Map02_MultiHighlight",
+      "Map03_RouteArc",
+      "Map04_PinCallout",
+      "Map05_RegionZoom",
+      "Map06_PathTrail",
+      "Map08_StatMap",
+      "Map09_EarthZoom",
+      "Map10_SatPinApp",
+      "Map12_SatTarget",
+      "Map13_CineLocation"
+    ],
+    "_marcacoes_topico": "[GO 04/08 + correcao do operador] Marcacoes na fronteira de TOPICO. CAPITULO=false: o gatilho por fronteira estava ERRADO — capitulo e SO para ROTEIRO-LISTA (5 predadores, 7 maravilhas; cada item = um capitulo, numeracao completa 1..N, nunca na intro). Aguarda o detector de roteiro-lista (ESPEC-ACERVO 6.1). TRANSICOES=true seguem na fronteira: overlay CLAREAR, pico do brilho = ponto do corte, pendente de teste isolado aprovado pelo operador.",
+    "_snap_max_s": "[operador 05/08] 'a transicao deve ser OBRIGATORIAMENTE na transicao de cenas'. A marcacao nasce na fronteira de TOPICO, que nem sempre e fronteira de CENA (bug provado no render da Africa: transicao em 78,60s dentro da cena 73,88-82,08s com polaroid). O preparar_render ENCAIXA a marcacao no corte mais proximo dentro desta janela; sem corte na janela, NAO marca.",
+    "marcacoes_topico": {
+      "capitulo": false,
+      "transicoes": true,
+      "capitulo_dur": 3.0,
+      "capitulo_max": 99,
+      "snap_max_s": 2.5
+    },
+    "_max_usos_por_fonte": "[operador 05/08] 'nao respeitou a regra do nao repetimento com forca... talvez so enrijecer mais essa regra ja funcione'. 1 = um video-fonte serve UMA cena no video inteiro (identidade por pexels_id, nao por arquivo). Suportado pela medicao de oferta: 24 queries dos 3 biomas, ZERO com menos de 4 fontes distintas. Ausente = 2 (comportamento antigo). Env MAX_USOS_FONTE sobrepoe.",
+    "max_usos_por_fonte": 1,
+    "_hook": "[GO 04/08, ESPEC-ABERTURA-E-TAKES 1.4] Janela do HOOK medida em PALAVRAS (regra de 3 sobre os 3 biomas validados: 718 palavras/292s = 2,46 p/s -> 355 palavras = 2:25). Toda instrucao 'de hook' vale SO dentro dela. A constante mora em director/hook.py; aqui ficam os knobs que a USAM.",
+    "mapa_hook_obrigatorio": true,
+    "_edicao": "[D1-D6, GO do operador 05/08] DIRETOR DE EDICAO: cronograma UNICO dos elementos (apresentacoes + acervo de texto + ilustracoes), deterministico. Antes cada sistema decidia sozinho e as colisoes eram resolvidas por supressao — resultado medido: Grafico 71% dos momentos, Texto 8%, apresentacoes alcancando 30% das cenas. Cotas D4: Overlay 35 / Texto 30 / Apresentacao 20 / Grafico 15. D5: 1 elemento a cada 35 palavras (operador: 'comecaremos com esse, se eu achar muito depois do primeiro teste, reduziremos'). Ausente = no-op, cada sistema segue como esta.",
+    "edicao": {
+      "acervo_texto": true,
+      "palavras_por_elemento": 20,
+      "respiro_s": 1.5,
+      "respiro_overlay_s": 1.0,
+      "texto_por_min_hook": 3.0,
+      "texto_por_min_miolo": 2.0,
+      "hook_ate_s": 120.0,
+      "overlay_tela_habilitacao": {
+        "OvTake04_FaiscaCapCut": false,
+        "OvTake07_Fogo": false,
+        "OvTake12_Lareira": false
+      }
+    },
+    "_apresentacao_pool": "[D2/D3 05/08] `quadro` REGISTRADO (estava construido e orfao no Presentacao.tsx, inalcancavel pelo diretor). `quadro` e `film` valem para VIDEO tambem — antes toda apresentacao exigia imagem e alcancava 30% das cenas. split=comparacao, grid=lista de varios elementos (com o grid do tema ao fundo).",
+    "_inaturalist": "[GO 04/08, ESPEC-INATURALIST] Fonte de IMAGEM tier 2/3 para especie NOMEADA que ficou mal resolvida. LICENCA: so CC0+CC-BY (video monetizado; NC/ND sao PROIBIDOS e CC-BY-SA fica fora pelo share-alike). Foto NUNCA aparece crua: apresentacao 'quadro' obrigatoria. Frequencia: >=7 cenas entre quadros no hook, >=14 depois. Ausente/false = pass nao roda.",
+    "inaturalist": true,
+    "_abertura": "[GO 04/08, ESPEC-ABERTURA-E-TAKES Item 1] Abertura com o nome do pais sobre take fixo de video. Ausente/false = nenhuma abertura (comportamento de hoje, byte a byte). dur_seg sorteada UMA VEZ no pass e gravada no timeline (render nunca sorteia).",
+    "abertura": {
+      "dur_min": 5.0,
+      "dur_max": 7.0,
+      "fade_s": 1.5
+    },
+    "_vision_poster_gate": "[PoC Vision 05/08 — ordem do operador: 'analisar 72 cenas foi 1h... FORA DE COGITACAO'] Pre-gate de POSTERS em lote no resolver_identidade: 1 chamada Vision julga os posters (~50KB) de ate 4 candidatos ANTES de baixar qualquer video; reprovado nem baixa. Medicao-base (manifesto predadores): 88% dos julgamentos eram FAIL apos download completo. O vet_contrato integral segue sendo o juiz final do escolhido (nenhum invariante afrouxado). Kill-switch: env VISION_POSTER_GATE=0.",
+    "vision_poster_gate": true,
+    "_antecipa_max_s": "[A4 — operador 06/08] 'algumas insercoes de texto dinamicos entraram um pouco antes do que deveriam entrar'. Era 2.5 = o elemento podia aparecer ate 2,5s ANTES da palavra-ancora. Mesma familia do D8 (capitulo anunciando antes da fala). 0 = nunca adianta.",
+    "_edicao_c1": "[C1 — operador 06/08] '3-4 por minuto' nos 2 primeiros minutos e '2-3 por minuto' no miolo, contando entrada de texto + acervo TEXTO + acervo OVERLAY + ilustracao (apresentacao e word-pop NAO contam). Medido no predadores v2: 1,4/min. Piso implementado como 3o passe no edicao.py — ignora cota (cota e equilibrio, piso e requisito), mas respiro/dono/teto/dedup continuam inviolaveis.",
+    "sfx_vol_por_variante": {
+      "Texto01_Typewriter": 0.13,
+      "Texto10_LetterCascade": 0.13,
+      "Ovl11_SpecBadge": 0.15,
+      "Texto05_BoxedKicker": 0.15,
+      "Ovl09_TickerCaption": 0.15,
+      "Ovl05_CornerTag": 0.15,
+      "Ovl08_SideNote": 0.15,
+      "Ovl04_FootnotePill": 0.15
+    },
+    "_sfx_vol_por_variante": "[S8 — operador 06/08] 'os que eu sinalizar explicitamente que devam ser 0.15 ou menor, esses deverao ser o DEFAULT para esses sfx especificos'. Quem nao esta aqui herda o papel 'entrada' (0.20). Teto sfx_vol_max=0.20 continua clampando tudo.",
+    "sfx_por_variante": {
+      "Graf01_CounterGlow": "sfx/ui/counter_digital.mp3",
+      "Graf02_Odometer": "sfx/ui/counter_digital.mp3",
+      "Graf10_BigStatCard": "sfx/ui/counter_digital.mp3",
+      "Graf14_OvlCounterPunch": "sfx/ui/counter_digital.mp3",
+      "Graf15_OvlStatCorner": "sfx/ui/counter_digital.mp3",
+      "Ovl12_GiantStat": "sfx/ui/counter_digital.mp3",
+      "Graf03_DonutPercent": "sfx/ui/counter_digital.mp3",
+      "Graf04_GaugeMeter": "sfx/ui/counter_digital.mp3",
+      "Graf16_OvlProgressBar": "sfx/ui/counter_digital.mp3",
+      "Texto07_StampImpact": "sfx/impact/impact_thud_01.mp3",
+      "Texto09_UnderlineDraw": "sfx/whoosh/whoosh_air_01.mp3",
+      "Texto03_WordPop": "sfx/impact/impact_hit_01.mp3",
+      "Texto06_SplitBar": "sfx/whoosh/whoosh_air_01.mp3",
+      "Texto10_LetterCascade": "sfx/whoosh/whoosh_air_01.mp3",
+      "Texto01_Typewriter": "sfx/ui/typewriter_tapping.mp3",
+      "Texto08_GradientGlow": "sfx/impact/impact_boom_01.mp3",
+      "Texto02_HighlightSweep": "sfx/whoosh/whoosh_air_01.mp3",
+      "Texto05_BoxedKicker": "sfx/ui/ui_click_01.mp3",
+      "Ovl03_LowerThird": "sfx/whoosh/whoosh_air_01.mp3",
+      "Ovl02_SubchapterLine": "sfx/whoosh/whoosh_air_01.mp3",
+      "Ovl14_PillVerdict": "sfx/impact/impact_thud_01.mp3",
+      "Ovl09_TickerCaption": "sfx/ui/ui_click_01.mp3",
+      "Ovl11_SpecBadge": "sfx/ui/ui_click_01.mp3",
+      "Ovl05_CornerTag": "sfx/ui/ui_click_01.mp3",
+      "Ovl08_SideNote": "sfx/ui/ui_click_01.mp3",
+      "Ovl04_FootnotePill": "sfx/ui/ui_click_01.mp3",
+      "Ovl10_NumberBadge": "sfx/ui/counter_digital.mp3",
+      "Ovl07_QuoteAttribution": "sfx/bell/bell_chime_02.mp3",
+      "Ovl13_PriceTag": "sfx/ui/counter_digital.mp3",
+      "Ovl01_ChapterBig": "sfx/impact/impact_boom_01.mp3"
+    },
+    "_sfx_por_variante": "[E1/U3-U8 — operador 06/08] 'cada FAMILIA de animacao precisa de um SFX FIXO seu, catalogado, nao sorteado'. Par SOM<->ANIMACAO (R4: SFX preso ao EVENTO). Volume herda sfx_vols/sfx_vol_max (teto 0.20).",
+    "maestro_llm": "luna",
+    "enum_polaroid": true,
+    "b2_take_fala": true
+  }
+}

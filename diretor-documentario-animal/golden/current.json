@@ -1,0 +1,9 @@
+{
+  "schema": "vidmator_golden_pointer_v1",
+  "golden_id": "leopardo_neves_14_08",
+  "manifest": "director/golden/leopardo_neves_14_08.json",
+  "artifact": "_saida/leopardo_neves.mp4",
+  "sha256": "d7ceb7af126a37f0d514c8bb2597367cb33064fe33d1181d30d02ab440d4cfe9",
+  "promoted_by": "operator",
+  "promoted_at": "2026-08-14T20:20:20-03:00"
+}

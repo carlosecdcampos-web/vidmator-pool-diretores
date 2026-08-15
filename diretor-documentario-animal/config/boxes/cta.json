@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "box": "cta",
+  "defaults": {
+    "piso_s": 5.5,
+    "teto_repeticoes": 2
+  },
+  "rotas_declaradas": [],
+  "elementos": [
+    {
+      "id": "Cta01_InscricaoInterativa",
+      "nome": "CTA de Inscricao Interativa",
+      "status": "oficial",
+      "aprovado_operador_em": "2026-08-14",
+      "module": "./YtCta",
+      "export": "Cta01_InscricaoInterativa",
+      "quando": "chamada editorial para curtir, inscrever-se e ativar o sino sobre o take",
+      "porque_usar": "pedir a acao sem interromper o video e variar a identidade visual pelo banco global de CTA",
+      "diretriz_editorial": {
+        "usar_quando": [
+          "nas aparicoes editoriais de pedido para curtir, inscrever-se e ativar o sino"
+        ],
+        "nao_usar_quando": [
+          "durante abertura, CTA de produto ou outro elemento que ja seja dono da tela"
+        ],
+        "como_usar": [
+          "sortear uma unica opcao habilitada por video",
+          "repetir exatamente a mesma opcao em todas as aparicoes daquele video",
+          "preservar a escolha em rerenders do mesmo video"
+        ]
+      },
+      "roteamento": [
+        {
+          "intencao": "cta_inscricao",
+          "dominio": "overlay",
+          "tom": null,
+          "ordem_base": 0
+        }
+      ],
+      "peso_operador": 1,
+      "uso_obrigatorio": true,
+      "exibe": [],
+      "requer": {
+        "todos": []
+      },
+      "requer_especial": null,
+      "max_palavras": null,
+      "piso_s": 5.5,
+      "paletas": [
+        "classic",
+        "gold",
+        "amber",
+        "crimson",
+        "emerald",
+        "violet",
+        "orange",
+        "rose",
+        "cyan"
+      ],
+      "banco_templates": {
+        "modo": "sorteio_estavel",
+        "escopo": "video",
+        "persistencia": "todas_as_aparicoes",
+        "templates": [
+          {
+            "id": "cta_classic",
+            "nome": "Classic YouTube",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "classic",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_gold",
+            "nome": "Gold",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "gold",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_amber",
+            "nome": "Amber",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "amber",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_crimson",
+            "nome": "Crimson",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "crimson",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_emerald",
+            "nome": "Emerald",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "emerald",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_violet",
+            "nome": "Violet",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "violet",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_orange",
+            "nome": "Orange",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "orange",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_rose",
+            "nome": "Rose",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "rose",
+            "status": "oficial",
+            "habilitada": true
+          },
+          {
+            "id": "cta_cyan",
+            "nome": "Cyan",
+            "variante": "Cta01_InscricaoInterativa",
+            "tema": "cyan",
+            "status": "oficial",
+            "habilitada": true
+          }
+        ]
+      },
+      "grupo_moldura": null,
+      "teto_repeticoes": 2,
+      "fundo_claro": false,
+      "pools_excecao": [],
+      "habilitada": true,
+      "ban_motivo": null
+    }
+  ]
+}
