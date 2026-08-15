@@ -13,6 +13,8 @@ corpo. Este diretório preserva somente o cérebro/política do nicho.
 - `config/boxes/`: contratos declarativos dos elementos disponíveis ao Maestro.
 - `golden/current.json`: ponteiro do golden; manifesto imutável do Leopardo ao lado.
 - `especs/`: evolução V9–V15, execução canônica, resolver, canário e boxes.
+- `especs/PLANO-OTIMIZACAO-PRE-E2E-15-08.md`: ordem bloqueante antes do próximo
+  E2E real — blocos 1–4, frota VEO, ensaio offline e critérios de vitória.
 - `relatorios/`: E2E Leopardo, análise Piter e handoff operacional.
 
 Esses arquivos não executam produção. A única rota continua no repositório
@@ -90,11 +92,11 @@ pelo operador rodada a rodada (V3→V7) — a memória dirigida completa do nich
 **`relatorios/`** — relatórios de implementação, auditorias do acervo, estudos
 de takes, catálogo de blindagem de produção, pendências e runbook.
 
-## Pendências vivas
+## Pendências vivas — ordem oficial de 15/08
 
-- Integrar o download linha-a-linha + casamento offline no `veo_ciclo` (a rota
-  canônica já está provada; falta a costura no ciclo de produção)
-- v8 fresh: aguardando o operador definir o animal
-- Validação de ouvido do ASMR -30 (C4) no v8
-- Personagem/avatar: gatilho armado e TRAVADO (VM_VEO_AVATAR_OK) até sinalização
-  explícita do operador
+1. Implementar e provar os blocos 1–4 no Vidmator.
+2. Ensaiar a frota VEO com duas contas e, depois da aprovação, quatro.
+3. Executar o ensaio integral sem custo com o golden do Leopardo.
+4. Somente então autorizar o novo E2E real.
+
+Personagem/avatar continua travado até sinalização explícita do operador.

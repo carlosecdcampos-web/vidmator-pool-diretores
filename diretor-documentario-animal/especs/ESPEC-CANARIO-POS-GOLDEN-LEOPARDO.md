@@ -113,13 +113,19 @@ Aceite do canário:
 10. comparar o resultado com invariantes e restrições do golden;
 11. emitir placar final de vitória ou pendências, sem maquiar falhas.
 
-## 6. Isolamento da futura otimização do VEO
+## 6. Ordem pré-canário atualizada em 15/08/2026
 
-A otimização do gerente VEO começa **somente depois** deste canário. Seu escopo
-será formalizado numa BOX própria de política/prompt/seleção do VEO.
+A regra anterior que adiava a otimização VEO para depois deste canário foi
+substituída por decisão expressa do operador. A ordem oficial e bloqueante vive em
+`PLANO-OTIMIZACAO-PRE-E2E-15-08.md`:
 
-Essa BOX poderá mudar como o gerente cria, prioriza e acompanha pedidos VEO. Ela
-não poderá alterar:
+1. implementar e provar os blocos 1–4;
+2. ensaiar a frota VEO com duas contas e então quatro;
+3. executar o ensaio integral sem custo;
+4. somente então disparar o novo E2E real.
+
+A BOX do gerente VEO poderá mudar como ele cria, prioriza e acompanha pedidos.
+Ela não poderá alterar:
 
 - `pipeline_canonico.py` ou a ordem da receita;
 - alocação/reuso do banco;
